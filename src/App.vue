@@ -1,22 +1,19 @@
 <template>
   <main>
     <h1>{{ title }}</h1>
-    
-    <form>
-      <label>
-        New Task
-        <input type="text" v-model="newTask">
-      </label>
-    </form>
+    <TaskForm @add-task="addTask" />
   </main>
 </template>
 
 <script setup lang="ts">
   import { ref } from 'vue';
+  import TaskForm from './components/TaskForm.vue';
 
   const title = ref<string>('Tasks App');
-  const newTask = ref<string>("");
 
+  const addTask = (newTask: string) => {
+    console.log(newTask);
+  }
 </script>
 
 <style scoped>
