@@ -20,7 +20,11 @@
   const newTask = ref<string>("");
 
   const formSubmit = () => {
-    emit("addTask", newTask.value);
+    if (newTask.value.trim()) {
+      emit("addTask", newTask.value);
+      newTask.value = '';
+    }
+
   }
 </script>
 
