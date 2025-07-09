@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>{{ message }}</h1>
+    <h1>{{ title }}</h1>
     
     <form>
       <label>
@@ -14,15 +14,15 @@
 <script setup lang="ts">
   import { ref } from 'vue';
 
-  const message = ref<string>('Tasks App');
+  const title = ref<string>('Tasks App');
   const newTask = ref<string>("");
 
-  
 </script>
 
 <style scoped>
   main {
     max-width: 800px;
     margin: 1rem auto;
+    padding: 1rem;
   }
 </style>
