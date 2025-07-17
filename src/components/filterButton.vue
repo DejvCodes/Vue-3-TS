@@ -20,7 +20,7 @@
 
   const emits = defineEmits<{
     setFilter: [filter: TaskFilter];
-  }>();
+  }>(); 
 </script>
 
 <style scoped>
