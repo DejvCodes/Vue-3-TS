@@ -53,7 +53,7 @@
         return tasks.value.filter((task) => task.done);
       case "todo":
         return tasks.value.filter((task) => !task.done);
-     }
+     } 
   });
 
   const addTask = (newTask: string) => {
