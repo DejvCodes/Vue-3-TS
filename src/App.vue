@@ -26,7 +26,7 @@
       :tasks="filteredTasks" 
       @toggle-done="toggleDone" 
       @remove-task="removeTask"
-    />
+    /> 
   </main>
 </template>
 
