@@ -12,7 +12,7 @@
         {{ error }}
       </small>
     </label>
-    <div class="button-container">
+    <div class="button-container"> 
       <button>Add</button>
     </div>
   </form>
