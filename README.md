@@ -55,10 +55,6 @@ This project demonstrates practical implementation of Vue 3's latest features co
    • `npm install` <br>
 3. Start development server: <br>
    • `npm run dev` <br>
-4. Build for production: <br>
-   • `npm run build` <br>
-5. Preview production build: <br>
-   • `npm run preview` <br>
 
 ## 💻 Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=vue,typescript,vite,nodejs)](https://skillicons.dev)
