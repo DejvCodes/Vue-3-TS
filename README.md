@@ -1,5 +1,5 @@
 ## Vue 3 + TypeScript - Tasks Management App
-A modern task management application built with Vue 3 and TypeScript, showcasing the power of composition API, reactive state management, and type-safe development. <br>
+A modern task management application built with Vue 3 and TypeScript, showcasing the power of composition API, reactive state management, and type-safe development. 
 This project demonstrates practical implementation of Vue 3's latest features combined with TypeScript's strong typing system.
 
 ## 🚀 Features
