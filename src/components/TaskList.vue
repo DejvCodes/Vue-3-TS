@@ -7,11 +7,12 @@
           :checked="task.done" 
           type="checkbox"
         >
-        <span :class="{ done: task.done }">{{ task.title }}</span>
+        <span :class="{done: task.done}">{{ task.title }}</span>
       </label>
       <button 
         @click="emits('removeTask', task.id)" 
-        class="outline">
+        class="outline"
+      >
         Remove
       </button>
     </article>
@@ -19,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-  import type { Task } from '@/types/Types';
+  import type {Task} from '@/types/Types';
 
   const props = defineProps<{
     tasks: Task[];

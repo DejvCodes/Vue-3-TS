@@ -2,7 +2,7 @@
   <main>
     <h1>{{ title }}</h1>
     <TaskForm @add-task="addTask" />
-    <h3 v-if="tasks.length">Add a task to get started.</h3>
+    <h3 v-if="!tasks.length">Add a task to get started.</h3>
     <h3 v-else>{{ totalDone }} / {{ tasks.length }} tasks completed</h3>
     <div v-if="tasks.length !== 0" class="button-container">
       <FilterButton 
@@ -31,19 +31,21 @@
 </template>
 
 <script setup lang="ts">
-  import { computed, ref } from 'vue'; 
+  import {computed, ref} from 'vue'; 
   import TaskForm from './components/TaskForm.vue';
-  import type { Task, TaskFilter } from './types/Types';
+  import type {Task, TaskFilter} from './types/Types';
   import TaskList from './components/TaskList.vue';
   import FilterButton from './components/filterButton.vue';
 
   const title = ref<string>('Tasks App');
   const tasks = ref<Task[]>([]);
   const filter = ref<TaskFilter>("all");
-
-  const totalDone = computed(() => tasks
-  .value.reduce((total, task) => task.done ? total + 1 : total, 0)
-  );
+  
+  const totalDone = computed(() => {
+    return tasks.value.reduce((total, task) => {
+      return task.done ? total + 1 : total;
+    }, 0);
+  });
 
   const filteredTasks = computed(() => {
      switch(filter.value) {

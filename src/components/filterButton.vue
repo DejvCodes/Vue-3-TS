@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-  import type { TaskFilter } from '@/types/Types';
+  import type {TaskFilter} from '@/types/Types';
 
   const props = defineProps<{
     filter: TaskFilter;
