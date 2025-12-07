@@ -63,7 +63,7 @@
       id: crypto.randomUUID(),
       title: newTask,
       done: false
-    })
+    });
   }
 
   const toggleDone = (id: string) => {
