@@ -10,7 +10,7 @@ This project demonstrates practical implementation of Vue 3's latest features co
 • **Form Validation** – Input validation with error handling. <br>
 • **Modern Build Setup** – Vite for lightning-fast development and optimized production builds. <br>
 
-## 📚 Concepts Covered
+## 📚 Concepts Covered 
 
 ### Vue 3 Fundamentals
 **Composition API** <br>
